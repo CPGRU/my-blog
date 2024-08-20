@@ -2,6 +2,7 @@
 title: 'Baked Parmesan Chickpeas'
 date: '2023-12-01'
 postImage: '/blog/parmesanChickpeas.jpg'
+theme: 'recipe'
 ---
 ## Ingredients
 - chickpeas | 2 cans, drained and dried

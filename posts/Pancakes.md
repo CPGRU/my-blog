@@ -2,6 +2,7 @@
 title: 'Easy Pancakes'
 date: '2024-01-20'
 postImage: '/blog/pancakes.jpg'
+theme: 'recipe'
 ---
 ## Ingredients
 - all-purpose flour | 1 cup

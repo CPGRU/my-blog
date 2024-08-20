@@ -9,12 +9,13 @@ export type Post = {
     title: string;
     date: string;
     postImage: string;
+    theme: string;
     content: string
 }
 
 const postsDirectory = path.join(process.cwd(), 'posts');
 
-export function getSortedPostsData(){
+export function getSortedPostsData(): Post[] {
     const fileNames = fs.readdirSync(postsDirectory);
     const allPostsData = fileNames.map((fileName)=>{
         const id = fileName.replace(/\.md$/,'');
