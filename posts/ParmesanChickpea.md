@@ -4,6 +4,7 @@ date: '2023-12-01'
 postImage: '/blog/parmesanChickpeas.jpg'
 theme: 'recipe'
 ---
+**Ingredients**
 ## Ingredients
 - chickpeas | 2 cans, drained and dried
 - garlic | 2 teaspoons

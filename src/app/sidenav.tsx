@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function SideNav (){
     return (
-        <div className="hidden w-full md:block md:w-auto">
+        <div className="w-full md:block md:w-auto">
             <ul className="flex justify-end">
                 <li className="mr-6">
                     <Link href="/about" className="text-blue-500 hover:text-blue-800">About</Link>
