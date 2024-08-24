@@ -1,14 +1,27 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import { getPostDataById } from "@/app/lib/api"
 
-export default async function Post({params}: { params: {id: string}}){
-    const postData = await getPostDataById(params.id);
-   
+export const metadata: Metadata = {
+    title: 'blog page',
+};
 
+export default async function Post({params}: { params: {id: string}}){
+    const { id, title, postImage, contentHtml} = await getPostDataById(params.id);
+   
+    const createMarkup = () =>{
+        return {
+            __html: contentHtml
+        }
+    }
     return (
-        <div>
-           <div dangerouslySetInnerHTML={{__html: postData.contentHtml}} /> 
-           <div>{postData.contentHtml}</div>
+        <div className="flex flex-row items-center">
+            <div>
+                <Image src={postImage} alt={id} width={680} height={1020} className="object-cover w-96 h-auto"/>
+            </div>
+            <div>{title}</div>
+            <div dangerouslySetInnerHTML={createMarkup()} className="ml-10"/> 
+           
         </div>
     )
 }

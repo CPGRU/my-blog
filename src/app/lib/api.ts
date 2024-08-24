@@ -11,7 +11,7 @@ export type Post = {
     date: string;
     postImage: string;
     theme: string;
-    content: string
+    contentHtml: string
 }
 
 const postsDirectory = path.join(process.cwd(), 'posts');
@@ -47,7 +47,7 @@ export async function getPostDataById(Params_id: string){
             id,
             ...data,
             contentHtml
-        } 
+        } as Post
     }catch(err){
         return notFound()
     } 

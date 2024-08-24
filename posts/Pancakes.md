@@ -15,7 +15,6 @@ theme: 'recipe'
 - vegetable oil | 2 tablespoons
 - egg | 1 piece, beaten
 
-
 **Method**
 > Combine flour, sugar, baking powder, and salt in a large bowl. Make a well in the center, and pour in milk, oil, and egg. Mix until smooth.
 
