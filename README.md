@@ -18,4 +18,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 # my-blog
 
-![myBlog image](/myBlogHome.png)
+![myBlog_image](public/myBlogHome.png)
