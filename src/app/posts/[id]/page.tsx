@@ -19,9 +19,10 @@ export default async function Post({params}: { params: {id: string}}){
             <div>
                 <Image src={postImage} alt={id} width={680} height={1020} className="object-cover w-96 h-auto"/>
             </div>
-            <div>{title}</div>
-            <div dangerouslySetInnerHTML={createMarkup()} className="ml-10"/> 
-           
+            <div className="flex flex-col ml-10">
+                <div>{title}</div>
+                <div dangerouslySetInnerHTML={createMarkup()} />  
+            </div>
         </div>
     )
 }
